@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+label {
+	@apply text-xs font-medium
+}
+
+.button {
+	@apply bg-[#15803D] hover:bg-[#16A34A] text-white font-semibold py-1 px-5 rounded
+}
+
+/* input:not([type='checkbox']) {
+	@apply border rounded h-10 w-full ring-1 ring-[#16A34A] focus:border-green-200 px-2 text-sm;
+} */
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+thead th {
+	@apply font-bold text-sm text-left border-2
+}
+td{
+	@apply text-sm text-center font-normal border-2 text-gray-700
+}
